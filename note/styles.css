@@ -1,0 +1,177 @@
+body {
+    background-image: url('pic2.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #ffffffd9;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #4A90E2;
+}
+
+main {
+    padding: 20px;
+}
+
+.student-info,
+.upload-section,
+.pdf-viewer {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subject-box {
+    background-color: #e9f5ff;
+    border: 1px solid #4A90E2;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+input[type="text"],
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+footer {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #357ABD;
+    color: #e0e0e0;
+}
+
+/* Styling for the Submitted Data Section */
+.submitted-data {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submitted-data h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Styling for the table */
+.submitted-data table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+.submitted-data th, .submitted-data td {
+    padding: 15px;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+}
+
+.submitted-data th {
+    background-color: #0066cc;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.submitted-data td {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Hover effect for table rows */
+.submitted-data tr:hover td {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+/* Styling for the 'View PDF' link */
+.submitted-data a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.submitted-data a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+/* Animations for the table when hovered */
+.submitted-data tr {
+    transition: transform 0.2s ease;
+}
+
+.submitted-data tr:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .submitted-data th, .submitted-data td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .submitted-data h2 {
+        font-size: 1.5rem;
+    }
+}
